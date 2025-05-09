@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@import "tailwindcss";
+
+
+@theme {
+    --font-jakarta: "Plus Jakarta Sans", "sans-serif";
+    --breakpoint-3xl: 120rem;
+    --color-orange2: #F44335;
+    --color-orange3: #FC5A5A;
+    --color-gray2: #2D3142;
+    --color-grayLight: #F5F5F5;
+}
+
+
+@plugin "daisyui" {
+    themes: dark --prefersdark;
+    root: ":root";
+    include: ;
+    exclude: ;
+    prefix: ;
+    logs: true;
+}
