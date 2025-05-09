@@ -6,11 +6,38 @@
 @theme {
     --font-jakarta: "Plus Jakarta Sans", "sans-serif";
     --breakpoint-3xl: 120rem;
+    --color-black2: #2D3142;
     --color-orange2: #F44335;
     --color-orange3: #FC5A5A;
     --color-white2: #FAFAFA;
     --color-gray2: #2D3142;
     --color-grayLight: #F5F5F5;
+
+
+
+    --animate-bounce: bounce 3s ease-in-out infinite;
+
+    @keyframes bounce {
+
+        0%,
+        100% {
+            transform: translateY(-10%);
+            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+            -webkit-transform: translateY(-10%);
+            -moz-transform: translateY(-10%);
+            -ms-transform: translateY(-10%);
+            -o-transform: translateY(-10%);
+        }
+
+        50% {
+            transform: none;
+            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+        }
+    }
 }
 
 /* body {
@@ -24,4 +51,21 @@
     exclude: ;
     prefix: ;
     logs: true;
+}
+
+
+@theme {}
+
+@layer components {
+    .btn1 {
+        @apply md:border-2 border-1 border-orange2 py-1.5 px-3 md:py-3 md:px-7 text-[1rem] md:font-bold text-orange2 rounded-3xl
+    }
+
+    .mission-card {
+        @apply h-full items-start max-sm:items-center justify-evenly max-sm:space-y-3 flex flex-col lg:ml-14 max-sm:text-center
+    }
+
+    .mission-wrap {
+        @apply mx-auto grid md:grid-cols-2 md:pt-[10.625rem] md:pb-[4.375rem] pt-[3rem] pb-[2rem] bg-[url('../img/shape.png')] bg-cover xl:px-[6%] px-0
+    }
 }
