@@ -8,10 +8,14 @@
     --breakpoint-3xl: 120rem;
     --color-orange2: #F44335;
     --color-orange3: #FC5A5A;
+    --color-white2: #FAFAFA;
     --color-gray2: #2D3142;
     --color-grayLight: #F5F5F5;
 }
 
+/* body {
+    font-size: 1.125rem;
+} */
 
 @plugin "daisyui" {
     themes: dark --prefersdark;

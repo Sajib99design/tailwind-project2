@@ -9,27 +9,27 @@
   <link rel="stylesheet" href="./src/style.css">
 </head>
 
-<body class="font-jakarta">
+<body class="font-jakarta text-[1.125rem]">
   <header class="container mx-auto ">
     <div class="navbar bg-blu-100">
       <div class="navbar-start">
-        <a class="btn btn-ghost text-xl"><img src="./img/logo.png" alt="logo"> </a>
+        <a class="btn btn-ghost text-xl hover:border-white"><img src="./img/logo.png" alt="logo"> </a>
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1 text-[1rem]">
-          <li><a>Home</a></li>
+          <li><a class="hover:text-orange2">Home</a></li>
           <li><a class="text-orange2">About Us</a></li>
           <li>
             <details>
-              <summary>Upskill</summary>
-              <ul>
+              <summary class="hover:text-orange2">Upskill</summary>
+              <ul class="z-40 bg-white2">
                 <li><a>Submenu</a></li>
                 <li><a>Submenu</a></li>
                 <li><a>Submenu</a></li>
               </ul>
             </details>
           </li>
-          <li><a>Contact us </a></li>
+          <li><a class="hover:text-orange2">Contact us </a></li>
         </ul>
       </div>
 
@@ -48,7 +48,8 @@
             <li><a>Contact us </a></li>
           </ul>
         </div>
-        <a class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-orange2 text-white rounded-[.5rem] font-normal">Register
+        <a
+          class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-orange2 text-white rounded-[.5rem] font-normal hover:bg-gray-800">Register
           Interest</a>
       </div>
 
@@ -56,10 +57,115 @@
   </header>
 
   <section class="hero-area">
-    <div>
-      <p class="text-[20px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam facilis incidunt itaque
-        sint
-        aperiam voluptate sit laboriosam! Architecto, repellendus culpa.</p>
+    <div class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-full">
+        <div class="hero-items text-center absolute h-full w-full flex flex-col justify-center items-center gap-[1rem]">
+          <p class="text-sm md:text-[1.2rem] text-white font-bold">Discover <span class="text-orange2"> - </span>
+            Interact <span class="text-orange2"> - </span> Engage </p>
+          <h2 class="text-[1.375rem] md:text-[2.5rem] lg:text-[3.5rem] font-bold text-white2">Connecting <span
+              class="text-orange2 border-b border-orange2">
+              talent</span> to <br> opportunity through
+            <span class="text-orange2">skills</span>
+          </h2>
+          <p class="text-2xl text-[1.2rem] text-white2 w-[50%] hidden md:block">We forster a skill-focussed environment
+            enabling
+            students to
+            navigate their
+            career with their self-paced
+            learning journey and businesses to gain market-ready talent. </p>
+          <a href="#"> <button
+              class="text-orange2 text-sm lg:text-[1rem] font-bold border lg:py-[1rem] lg:px-[2.2rem] py-[.4rem] px-[1rem] rounded-full bg-white2">
+              Ask
+              questions
+            </button></a>
+        </div>
+        <img src="./img/hero2.png" alt="hero" class="w-full h-[260px] md:h-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" class="btn btn-circle  text-white2 border-1">❮</a>
+          <a href="#slide2" class="btn btn-circle text-white2 border-1">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <div class="hero-items text-center absolute h-full w-full flex flex-col justify-center items-center gap-[1rem]">
+          <p class="text-sm md:text-[1.2rem] text-white font-bold">Discover <span class="text-orange2"> - </span>
+            Interact <span class="text-orange2"> - </span> Engage </p>
+          <h2 class="text-[1.375rem] md:text-[2.5rem] lg:text-[3.5rem] font-bold text-white2">Connecting <span
+              class="text-orange2 border-b border-orange2">
+              talent</span> to <br> opportunity through
+            <span class="text-orange2">skills</span>
+          </h2>
+          <p class="text-2xl text-[1.2rem] text-white2 w-[50%] hidden md:block">We forster a skill-focussed environment
+            enabling
+            students to
+            navigate their
+            career with their self-paced
+            learning journey and businesses to gain market-ready talent. </p>
+          <a href="#"> <button
+              class="text-orange2 text-sm lg:text-[1rem] font-bold border lg:py-[1rem] lg:px-[2.2rem] py-[.4rem] px-[1rem] rounded-full bg-white2">
+              Ask
+              questions
+            </button></a>
+        </div>
+        <img src="./img/hero2.png" alt="hero" class="w-full h-[260px] md:h-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" class="btn btn-circle  text-white2 border-1">❮</a>
+          <a href="#slide3" class="btn btn-circle text-white2 border-1"> ❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <div class="hero-items text-center absolute h-full w-full flex flex-col justify-center items-center gap-[1rem]">
+          <p class="text-sm md:text-[1.2rem] text-white font-bold">Discover <span class="text-orange2"> - </span>
+            Interact <span class="text-orange2"> - </span> Engage </p>
+          <h2 class="text-[1.375rem] md:text-[2.5rem] lg:text-[3.5rem] font-bold text-white2">Connecting <span
+              class="text-orange2 border-b border-orange2">
+              talent</span> to <br> opportunity through
+            <span class="text-orange2">skills</span>
+          </h2>
+          <p class="text-2xl text-[1.2rem] text-white2 w-[50%] hidden md:block">We forster a skill-focussed environment
+            enabling
+            students to
+            navigate their
+            career with their self-paced
+            learning journey and businesses to gain market-ready talent. </p>
+          <a href="#"> <button
+              class="hover:bg-gray-800 text-orange2 text-sm lg:text-[1rem] font-bold border lg:py-[1rem] lg:px-[2.2rem] py-[.4rem] px-[1rem] rounded-full bg-white2">
+              Ask
+              questions
+            </button></a>
+        </div>
+        <img src="./img/hero2.png" alt="hero" class="w-full h-[260px] md:h-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide2" class="btn btn-circle text-white2 border-1">❮</a>
+          <a href="#slide4" class="btn btn-circle text-white2 border-1">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <div class="hero-items text-center absolute h-full w-full flex flex-col justify-center items-center gap-[1rem]">
+          <p class="text-sm md:text-[1.2rem] text-white font-bold">Discover <span class="text-orange2"> - </span>
+            Interact <span class="text-orange2"> - </span> Engage </p>
+          <h2 class="text-[1.375rem] md:text-[2.5rem] lg:text-[3.5rem] font-bold text-white2">Shojib <span
+              class="text-orange2 border-b border-orange2">
+              talent</span> to <br> Show
+            <span class="text-orange2">skills</span>
+          </h2>
+          <p class="text-2xl text-[1.2rem] text-white2 w-[50%] hidden md:block">We forster a skill-focussed environment
+            enabling
+            students to
+            navigate their
+            career with their self-paced
+            learning journey and businesses to gain market-ready talent. </p>
+          <a href="#"> <button
+              class="text-orange2 text-sm lg:text-[1rem] font-bold border lg:py-[1rem] lg:px-[2.2rem] py-[.4rem] px-[1rem] rounded-full bg-white2">
+              Ask
+              questions
+            </button></a>
+        </div>
+        <img src="./img/hero2.png" alt="hero" class="w-full h-[260px] md:h-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide3" class="btn btn-circle text-white2 border-1">❮</a>
+          <a href="#slide1" class="btn btn-circle text-white2 border-1">❯</a>
+        </div>
+      </div>
     </div>
   </section>
 
