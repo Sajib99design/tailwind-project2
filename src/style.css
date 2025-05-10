@@ -9,13 +9,30 @@
     --color-black2: #2D3142;
     --color-orange2: #F44335;
     --color-orange3: #FC5A5A;
+    --color-green2: #00FF84;
     --color-white2: #FAFAFA;
     --color-gray2: #2D3142;
     --color-grayLight: #F5F5F5;
+    --color-green-100: oklch(0.96 0.04 156.74 / 0.6);
 
 
-
+    --animate-spin: spin 5s ease-in-out infinite;
     --animate-bounce: bounce 3s ease-in-out infinite;
+    --animate-spin2: spin2 5s ease-in-out infinite;
+
+    @keyframes spin2 {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(-360deg);
+        }
+
+        50% {
+            transform: rotate(0deg);
+        }
+    }
 
     @keyframes bounce {
 
@@ -38,6 +55,8 @@
             -o-transform: none;
         }
     }
+
+
 }
 
 /* body {
@@ -67,5 +86,37 @@
 
     .mission-wrap {
         @apply mx-auto grid md:grid-cols-2 md:pt-[10.625rem] md:pb-[4.375rem] pt-[3rem] pb-[2rem] bg-[url('../img/shape.png')] bg-cover xl:px-[6%] px-0
+    }
+
+    .team-cta {
+        @apply w-[1.875rem] h-[1.875rem] flex justify-center items-center bg-green-100 rounded-full
+    }
+
+
+
+    .before-image::before {
+        content: '';
+        @apply inline-block w-[15rem] h-[15rem] lg:top-[55%] max-lg:top-[-15%] left-[-20%] -z-10 bg-no-repeat bg-center bg-cover mr-2 align-middle absolute;
+        background: url('../img/team-dot.png');
+    }
+
+    .after-image::after {
+        content: '';
+        @apply inline-block w-[15rem] h-[15rem] lg:top-[-22%] max-lg:top-[55%] right-[-35%] max-lg:right-[-28%] -z-10 bg-no-repeat bg-center bg-cover mr-2 align-middle absolute;
+        background: url('../img/team-dot.png');
+    }
+
+    .footer-titles {
+        @apply mb-4 font-bold uppercase tracking-widest text-lg text-center md:text-left dark:text-white text-[#20484F]
+    }
+
+    .footer-link {
+        @apply text-[#20484F] text-base transition duration-100 hover:text-indigo-500 active:text-indigo-600 dark:text-gray-200
+    }
+}
+
+@layer base {
+    .bg-rights {
+        background-position: 72% center;
     }
 }
