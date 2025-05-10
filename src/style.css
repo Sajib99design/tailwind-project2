@@ -59,9 +59,6 @@
 
 }
 
-/* body {
-    font-size: 1.125rem;
-} */
 
 @plugin "daisyui" {
     themes: dark --prefersdark;
@@ -92,7 +89,17 @@
         @apply w-[1.875rem] h-[1.875rem] flex justify-center items-center bg-green-100 rounded-full
     }
 
+    .team-cta2 {
+        @apply hover:bg-green2 group-hover:bg-white transition-all duration-500 text-green2 hover:text-black
+    }
 
+    .team-items {
+        @apply bg-white rounded-lg p-5 md:p-10 text-center shadow-2xl shadow-gray-100 space-y-3 hover:bg-gray-200 transition duration-500 relative hover:outline-1 outline-orange2 hover:-translate-y-1
+    }
+
+    .team-area {
+        @apply md:pt-[9rem] md:pb-[10rem] py-5 bg-[url('../img/team-back.png')] bg-contain bg-no-repeat overflow-hidden
+    }
 
     .before-image::before {
         content: '';
@@ -111,6 +118,10 @@
     }
 
     .footer-link {
+        @apply text-[#20484F] text-base transition duration-100 hover:text-indigo-500 active:text-indigo-600 dark:text-gray-200
+    }
+
+    .footer-nav {
         @apply text-[#20484F] text-base transition duration-100 hover:text-indigo-500 active:text-indigo-600 dark:text-gray-200
     }
 }
