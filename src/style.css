@@ -94,7 +94,7 @@
     }
 
     .team-items {
-        @apply bg-white rounded-lg p-5 md:p-10 text-center shadow-2xl shadow-gray-100 space-y-3 hover:bg-gray-200 transition duration-500 relative hover:outline-1 outline-orange2 hover:-translate-y-1
+        @apply bg-white rounded-lg p-5 md:p-10 text-center shadow-2xl shadow-gray-100 space-y-3 hover:bg-gray-400 transition duration-500 relative hover:outline-1 outline-orange2 hover:-translate-y-1
     }
 
     .team-area {
@@ -115,7 +115,7 @@
 
     .before-line::before {
         content: '';
-        @apply hidden md:inline-block w-[1.25rem] lg:w-6 h-full -bottom-[8rem] lg:-bottom-[10rem] left-[48%] lg:max-2xl:left-[50%] md:max-lg:left-[42%] bg-center bg-no-repeat absolute;
+        @apply hidden md:inline-block w-[1.25rem] lg:w-6 h-full -bottom-[8rem] lg:-bottom-[11rem] left-[48%] lg:max-2xl:left-[50%] md:max-lg:left-[42%] bg-center bg-no-repeat absolute;
         background: url('../img/line.png');
         background-size: contain;
         background-position: center;
