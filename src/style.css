@@ -98,7 +98,8 @@
     }
 
     .team-area {
-        @apply md:pt-[9rem] md:pb-[10rem] py-5 bg-[url('../img/team-back.png')] bg-contain bg-no-repeat overflow-hidden
+      @apply md:pt-[9rem] md:pb-[10rem] py-5 bg-[url('../img/team-back.png')] bg-contain bg-no-repeat  overflow-hidden;
+        background-position: top center;
     }
 
     .before-image::before {
