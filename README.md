@@ -29,7 +29,7 @@ Browse the code on GitHub:
 - Tailwind CSS for rapid UI styling
 - AOS (Animate On Scroll) for smooth scroll-based animations
 - Responsive images with no extra margin/padding
-- Deployed on Vercel for fast, global delivery
+- Deployed on vite for fast, global delivery
 
 ---
 
