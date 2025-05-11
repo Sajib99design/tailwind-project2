@@ -13,14 +13,14 @@ It features:
 ## 🌐 Live Demo
 
 Check out the live site here:
-👉 [**Live Website**](https://tailwindsmart.netlify.app/)
+👉 [**Live Website**](https://creative-tailwind.netlify.app/)
 
 ---
 
 ## 🛠 Repository
 
 Browse the code on GitHub:
-👉 [**GitHub Repository**](https://github.com/Sajib99design/tailwind-assignment--smartHablu.git)
+👉 [**GitHub Repository**](https://github.com/Sajib99design/tailwind-project2.git)
 
 ---
 
@@ -43,4 +43,4 @@ This project was developed following the provided **Figma design** and aims to r
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/Sajib99design/tailwind-assignment--smartHablu.git
+   git clone https://github.com/Sajib99design/tailwind-project2.git
