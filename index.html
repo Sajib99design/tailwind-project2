@@ -38,18 +38,19 @@
         </ul>
       </div>
       <div class="navbar-end">
-        <div class="dropdown">
+        <div class="dropdown ">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </div>
-          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-            <li><a>Home</a></li>
-            <li><a>About Us</a></li>
-            <li><a>Upskill</a></li>
-            <li><a>Contact us </a></li>
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content bg-grayLight rounded-box z-1 mt-3 w-32 p-2 shadow text-center">
+            <li class="items-center"><a>Home</a></li>
+            <li class="items-center"><a>About Us</a></li>
+            <li class="items-center"><a>Upskill</a></li>
+            <li class="items-center"><a>Contact us </a></li>
           </ul>
         </div>
         <a class="btn btn-sm md:btn-md lg:btn-lg bg-orange2 text-white rounded-[.5rem] font-normal hover:bg-gray-800">Register
@@ -216,7 +217,7 @@
     </div>
   </section>
   <!-------------- Mission-area-start ----------- -->
-  <section class="mission-area bg-grayLight">
+  <section class="mission-area bg-grayLight relative before-line">
     <div class="container mission-wrap">
       <div class="mission-left mission-card">
         <div class="mission-titl">
@@ -237,9 +238,9 @@
         <img class="md:animate-bounce " src="./img/mission.png" alt="mission">
       </div>
     </div>
-    <div class="container mission-wrap">
-      <div class="mission-left">
-        <img class="md:animate-bounce" src="./img/mission.png" alt="mission" style="animation-delay: 2s">
+    <div class="container mission-wrap md:max-lg:gap-[10%]">
+      <div class="mission-left md:max-lg:mr-[15%]">
+        <img class="md:animate-bounce" src="./img/mission2.png" alt="mission" style="animation-delay: 2s">
       </div>
       <div class="mission-right mission-card lg:ml-28 max-md:mt-7">
         <div class="mission-title">
@@ -255,6 +256,9 @@
         </a>
       </div>
     </div>
+    <!-- <div class="absolute -bottom-[6rem] left-[50%] 2xl:left-[46%]  max-lg:hidden">
+      <img src="./img/line.png" alt="line">
+    </div> -->
   </section>
 
   <!--  discover section -->
