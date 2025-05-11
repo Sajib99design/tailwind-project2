@@ -6,7 +6,7 @@ It features:
 - Fully responsive layouts (mobile + desktop)
 - Animated image sections using AOS
 - Clean, scalable Tailwind CSS components
-- Optimized performance, deployed on Vercel
+- Optimized performance, deployed netlify
 
 ---
 
